@@ -3,7 +3,7 @@ import useData from "./useData";
 interface Platform {
     id: number;
     name: string;
-    slig: string;
+    slug: string;
 }
 
 const usePlatforms = () => useData<Platform>('/platforms/lists/parents');
