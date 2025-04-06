@@ -1,7 +1,6 @@
 {
   "name": "game-hub",
   "private": true,
-  "homepage": "https://dorhaboosha.github.io/Video-Game-Discovery-App/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
