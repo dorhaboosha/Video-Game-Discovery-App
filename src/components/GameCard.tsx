@@ -5,6 +5,7 @@ import PlatformIconList from './PlatformIconList';
 import CriticScore from './CriticScore';
 import getCroppedImageUrl from '../services/image-url';
 import Emjoi from './Emjoi';
+import { Link } from 'react-router-dom';
 
 interface Props {
     game: Game;
@@ -20,7 +21,8 @@ const GameCard = ({ game }: Props) => {
             <CriticScore score={game.metacritic} />
             </HStack>
             <Heading fontSize="2xl">
-                {game.name}<Emjoi rating={game.rating_top} />
+              <Link to={'/games/' + game.slug}>{game.name}</Link>
+              <Emjoi rating={game.rating_top} />
               </Heading>
         </CardBody>
     </Card>
